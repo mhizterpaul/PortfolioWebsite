@@ -1,0 +1,431 @@
+					     /*LAYOUT*/
+
+
+
+html {
+ 	font: 17px "open Sans",sans-serif;
+ }
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+
+#positional-div {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body * {
+	max-height: 1000000em;
+	-moz-text-size-adjust: none;
+}
+ 
+body, nav > ul, main, header, h2, footer, footer>section, .portfolio-container {
+   display: flex;
+   flex-flow: column nowrap;
+   
+}
+
+ul{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+* a, .custom-icon {
+	text-decoration: none;
+	color: inherit;
+}
+
+#bio, #portfolio, #testimonials {
+ 	margin-bottom: 100px;
+ }
+
+.portfolio a, .testimonials a {
+ 	text-decoration: underline;
+ }
+
+
+
+
+                        /*HEADER*/
+
+h1 {
+ 	font-family: "UnifrakturMaguntia";
+ 	font-size: 2.5em;
+ }
+
+						/*NAVIGATION*/
+
+
+nav ul:first-of-type {
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+nav li {
+	margin: 20px 20px 20px 20px;
+	padding: 5px 10px 10px 10px;
+	white-space: nowrap;
+	border-radius: 3px;	 
+	letter-spacing: 1px;
+	text-transform: capitalize;
+}
+
+
+nav ul li ul>li {
+	font-size: 0.8em;
+	text-align: left;
+	margin-bottom: 30px;
+	margin: 10px;
+	letter-spacing: initial;
+}
+
+nav ul li ul > li:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul li ul li:first-of-type ~ li::after, section.portfolio-container div.portfolio:not(:first-of-type) p::after {
+	content: "coming soon!";
+	font-size: 0.7em;
+    vertical-align: super;
+    background-color: purple;
+    margin-left: 0;
+    border-radius: 3px;
+    color: white;
+}
+
+nav ul li > ul {
+ 	position: absolute;
+ 	top: 60%;
+ 	left: 55px;
+ 	display: none;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 0 0 6px 6px;
+ }
+
+nav ul li:nth-of-type(2):hover ul , nav ul li:nth-of-type(2):active ul {
+    display: block;
+}
+
+span.fa-angle-left {
+	position: absolute;
+	font-size: 3em;
+	left: 0;
+	top: 9%;
+	color: black;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+
+span.fa-angle-right {
+    position: absolute;
+    font-size: 3em;
+    right: 0;
+    top: 9%;
+    color: black;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+nav {
+	width: 100%;
+	font-family: helvetica;
+	overflow-x: hidden;
+}
+
+
+
+
+		          /*Main*/
+
+main * {
+	word-spacing: 3px;
+}
+
+
+                   /*Bio*/
+
+#bio {
+	margin-top: 60px;
+}                   
+
+main section article {
+	margin: 0 10px;
+}
+
+main section article > p {
+	font-size: 0.9em;
+    align-self: flex-start;
+    text-align: left;
+	text-align-last: center;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 0 0 10px;
+	max-width: 420px;
+}
+ 
+main section article > p img {
+ 	float: right;
+ 	shape-outside: ellipse(50% 50% at center) margin-box;
+ 	margin: 10px;
+ 	margin-right: 0;
+ 	width: 30%;
+ 	min-width: 200px;
+ 	max-width: 250px;
+
+ }
+
+span.emphasis {
+	letter-spacing: 1.2px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+a.green-btn {
+	line-height: 50px;
+	padding: 10px 10px;
+	margin-top: 20px;
+	margin-left: 10px;
+	background-color: green;
+	border-radius: 6px;
+	text-decoration: none;
+	color: white;
+}
+
+h2::after {
+    content: "";
+    width: 9%;
+    background-color: black;
+    padding: 2px;
+    margin-top: 2px;
+}
+
+h2 {
+	font-family: "Happy Monkey", sans-serif;
+	font-weight: bold;
+	margin: 50px 0 50px 0;
+	align-items: center;
+	font-size: 2.5em;
+}
+
+
+
+
+                /*Portfolio*/
+
+
+section#portfolio div.portfolio {
+    flex: 1 1 55vw;
+    max-width: 200px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 4px gray;
+    padding: 2px;
+    margin: 20px 0px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to left, gray, transparent, gray);
+  }
+
+  section#portfolio h2 {
+  	margin-bottom: 70px;
+  }
+
+  section#portfolio {
+  	overflow: hidden;
+  }
+
+section#portfolio section.portfolio-container div.portfolio:last-child {
+    margin-right: 0;
+
+ }
+
+.portfolio-container {
+  	flex-flow: row nowrap;
+  	justify-content: center;
+  	align-items: stretch;
+  	margin: 0 20px;
+  }
+
+div.slide-container-1 {
+  	position: relative;
+  }
+
+i.fa-angle-right {
+  	font-size: 4em;
+  	position: absolute;
+  	top: 35%;
+  	right: 0;
+  	color: rgba(0, 0, 0, 0.7);
+  }
+
+i.fa-angle-left {
+  	font-size: 4em;
+  	position: absolute;
+  	top: 35%;
+  	left: 0;
+    color: rgba(0, 0, 0, 0.7);
+  } 
+
+.portfolio img {
+  	  width: 200px;
+ }
+
+
+                   /*TESTIMONIALS*/
+
+#testimonials {
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-bottom: 200px;
+}
+
+
+
+
+
+                    /*Footer*/
+
+footer {
+	 flex: 1 1 100%;
+	 align-items: center;
+     margin-top: 20px;
+     background-color: black;
+     color: white;
+     padding: 10px 0;
+}
+
+footer span.fa, .custom-icon {
+	font-size: 1.5em;
+}
+
+footer  > section {
+	min-width: 100%;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.acknowledgement > a {
+	line-height: 2em;
+	margin: 0 10px 10px 10px;
+}
+
+.custom-icon::first-letter {
+	color: blue;
+}
+
+            /* MediaQueries*/
+
+
+@media screen and (min-width: 725px) and (max-width: 774px){
+               /*Header*/
+    h1 {
+ 	font-size: 3em;
+    }
+
+               /*Navigation*/
+    i[class *="fa-angle-"] {
+    	display: none;
+    }
+    
+              /*Main*/
+
+    main section article > p{
+    	font-size: 1em;
+    	max-width: 700px;
+    }
+    main section article > p img {
+    	float: left;
+    	margin: 15px;
+    	margin-left: 0;
+    }
+
+                 /*Portfolio*/
+    .portfolio-container {
+    	justify-content: space-evenly;
+    }
+
+                /*TESTIMONIES*/
+
+    blockquote {
+    	max-width: 900px;
+    	margin-left: auto;
+    	margin-right: auto;
+
+    }
+}
+
+@media screen and (min-width: 775px){
+	            /*Header*/
+
+	h1 {
+ 	font-size: 3em;
+ 	margin-bottom: 50px;
+    }
+
+                  /*Navigation*/
+    nav > ul > li {
+	margin: 0;
+    }
+
+    nav > ul:first-of-type {
+    	width: auto;
+    	padding: 0;
+    	justify-content: space-evenly;
+    	align-items: center;
+    } 
+
+    nav ul li > ul {
+    	left: 16.7%;
+    }
+
+    * [class *="fa-angle-"]{
+    	display: none;
+    }
+                   /*Main*/
+    main section article > p{
+    	font-size: 1em;
+    	max-width: 680px;
+    }
+
+    main section article > p img {
+    	float: left;
+    	margin: 15px;
+    	margin-left: 0;
+    }
+                   /*Portfolio*/
+    .portfolio-container {
+    	justify-content: space-evenly;
+    	max-width: 900px;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+
+                /*TESTIMONIES*/
+
+    blockquote {
+    	max-width: 900px;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+
+                    /*Footer*/
+    footer>section {
+        max-width: 70%;
+        min-width: 740px;
+    }
+
+}
