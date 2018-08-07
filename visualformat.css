@@ -393,7 +393,7 @@ footer  > section {
     }
 
     * [class *="fa-angle-"]{
-    	display: none;
+    	display: none !important;
     }
                    /*Main*/
     main section article > p{
