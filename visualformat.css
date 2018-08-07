@@ -387,6 +387,11 @@ footer  > section {
     	justify-content: space-evenly;
     	align-items: center;
     } 
+    
+    .slide {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
 
     nav ul li > ul {
     	left: 16.7%;
