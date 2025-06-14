@@ -63,7 +63,6 @@ Now, your website is successfully deployed and you can visit it at `<your-github
 Based on https://github.com/ashutosh1919/masterPortfolio/ and https://github.com/saadpasta/developerFolio
 Illustrations: https://undraw.co/
 
-https://github.com/harikanani/harikanani.github.io
 
 https://drive.google.com/file/d/13kaPsdMNDsM4LV9g7m5-E5PTildp-yYf/view
 
